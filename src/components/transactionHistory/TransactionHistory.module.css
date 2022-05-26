@@ -1,0 +1,17 @@
+.transactionHistory {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border:  1px solid beige;
+  padding: 0;
+
+}
+.headGrid{
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+.grid{
+    border:  1px solid gainsboro;
+    text-align: center;
+    padding: 2px;
+}

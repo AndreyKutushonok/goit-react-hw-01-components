@@ -1,0 +1,23 @@
+.item{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
+.status {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+.onLine {
+    composes: status;
+    background-color: greenyellow;
+}
+  
+.ofLine {
+    composes: status;
+    background-color: rgba(244, 52, 52, 0.905)
+}
