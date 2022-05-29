@@ -1,5 +1,6 @@
-import s from './TransactionHistory.module.css'
 import propTypes from 'prop-types'
+import s from './TransactionHistory.module.css'
+
 function TransactionHistory({items}){
     return(
         <table className={s.transactionHistory}>
@@ -13,10 +14,10 @@ function TransactionHistory({items}){
 
             <tbody >
             {items.map(({ id, type, amount, currency }) => (
-                <tr key={id}>
-                    <td className={s.grid}>{type}</td>
-                    <td className={s.grid}>{amount}</td>
-                    <td className={s.grid}>{currency}</td>
+                <tr className={s.grid} key={id}>
+                    <td className={s.gridEl}>{type}</td>
+                    <td className={s.gridEl}>{amount}</td>
+                    <td className={s.gridEl}>{currency}</td>
                 </tr>
             ))}
             </tbody>

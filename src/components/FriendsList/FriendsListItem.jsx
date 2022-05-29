@@ -1,5 +1,6 @@
 import propTypes from 'prop-types'
 import s from './FriendsListItem.module.css'
+
 function FriendListItem({avatar, name, isOnline}){
     return(
         <li className={s.item}>

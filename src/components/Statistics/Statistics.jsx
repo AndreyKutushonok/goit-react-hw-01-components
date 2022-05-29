@@ -1,5 +1,15 @@
 import propTypes from 'prop-types'
 import s from './Statistics.module.css'
+
+function generateRandomColor() {
+    const chart = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += chart[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 function Statistics({title, stats}){
     return (
         <section className={s.statistics}>
@@ -7,7 +17,7 @@ function Statistics({title, stats}){
 
             <ul className={s.statList}>
             {stats.map(stat => (
-                <li className={s.statsItem} key={stat.id}>
+                <li className={s.statsItem} key={stat.id} style={{ backgroundColor: generateRandomColor()}}>
                     <span className={s.label}>{stat.label}</span>
                     <span className={s.percentage}>{stat.percentage}%</span>
                 </li>

@@ -1,5 +1,6 @@
 import propTypes from 'prop-types'
-import s from'./Profile.module.css'//зробити модулем
+import s from'./Profile.module.css'
+
 function Profile ({username, tag, location, avatar, stats}){
     
     return (<div className={s.profile}>
@@ -10,7 +11,7 @@ function Profile ({username, tag, location, avatar, stats}){
                         className={s.avatar}
                     />
                     <p className={s.name}>{username}</p>
-                    <p className={s.tag}>{tag}</p>
+                    <p className={s.tag}>@{tag}</p>
                     <p className={s.location}>{location}</p>
                 </div>
             

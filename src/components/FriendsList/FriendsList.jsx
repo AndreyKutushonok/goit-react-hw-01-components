@@ -1,6 +1,7 @@
-import FriendListItem from '../friendsListItem/FriendsListItem'
-import s from './FriendsList.module.css'
 import propTypes from 'prop-types'
+import FriendListItem from './FriendsListItem'
+import s from './FriendsList.module.css'
+
 function FriendList({friends}){
     return (
         <ul className={s.friendsList} key={friends.id}>
